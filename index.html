@@ -3,30 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trequila — Musica che fa stare bene</title>
-<meta name="description" content="Trequila: trio acustico. Concerti live, improvvisati e non. Prossime date a Bologna e dintorni.">
+<title>Trequila Band | Musica che fa stare bene</title>
+<meta name="description" content="Trequila Band: trio acustico di pianoforte, chitarra e percussioni. Concerti dal vivo, tra classici rivisitati e improvvisazione. Bologna e dintorni.">
+<link rel="canonical" href="https://trequilaband.github.io/site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trequila Band | Musica che fa stare bene">
+<meta property="og:description" content="Trio acustico: pianoforte, chitarra e percussioni. Dal vivo, senza rete.">
+<meta property="og:url" content="https://trequilaband.github.io/site/">
+<meta property="og:image" content="https://trequilaband.github.io/site/assets/img/og.jpg">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Trequila Band",
+  "genre": "Acoustic",
+  "url": "https://trequilaband.github.io/site/",
+  "image": "https://trequilaband.github.io/site/assets/img/og.jpg",
+  "sameAs": [
+    "https://www.instagram.com/trequilaband",
+    "https://www.youtube.com/@TrequilaBand"
+  ]
+}
+</script>
 </head>
 <body>
 
 <header class="site-header">
-  <a href="#top" class="brand">
+  <a href="#top" class="brand" aria-label="Trequila Band, torna in alto">
     <img src="assets/img/logo.png" alt="Trequila" class="brand-mark">
   </a>
-  <nav class="site-nav">
-    <a href="#data">Prossima data</a>
+  <nav class="site-nav" aria-label="Principale">
+    <a href="#video">Video</a>
     <a href="#chi-siamo">Chi siamo</a>
-    <a href="https://www.instagram.com/trequilaband" target="_blank" rel="noopener">Instagram</a>
+    <a href="#foto">Foto</a>
+    <a href="#data">Date</a>
+    <a href="#contatti" class="nav-cta">Contatti</a>
   </nav>
 </header>
 
 <main id="top">
 
   <section class="hero">
+    <div class="hero-photo" aria-hidden="true"></div>
     <div class="hero-shapes" aria-hidden="true">
       <span class="shape shape-circle"></span>
       <span class="shape shape-bar"></span>
@@ -36,8 +61,11 @@
       <p class="hero-kicker">Trio acustico</p>
       <h1 class="hero-title">Trequila</h1>
       <p class="hero-tagline">Musica che fa stare bene</p>
-      <p class="hero-sub">Voce, chitarra e groove — brani nostri improvvisati sul momento e classici rivisitati, dal vivo, senza rete.</p>
-      <a href="#data" class="hero-cta">Guarda la prossima data</a>
+      <p class="hero-sub">Pianoforte, chitarra e percussioni. Classici rivisitati e improvvisazioni sul momento, dal vivo, senza rete.</p>
+      <div class="hero-actions">
+        <a href="#video" class="hero-cta">Guarda i video</a>
+        <a href="#data" class="hero-cta hero-cta-ghost">Prossima data</a>
+      </div>
     </div>
   </section>
 
@@ -47,18 +75,75 @@
       <h2 class="next-date-venue">Dude</h2>
       <p class="next-date-detail">Via Rialto 10/A, Bologna</p>
       <p class="next-date-when">Data e orario in via di conferma</p>
-      <a class="next-date-map" href="https://www.google.com/maps/search/?api=1&query=Via+Rialto+10A+Bologna" target="_blank" rel="noopener">Apri in mappa</a>
+      <a class="next-date-map" href="https://www.google.com/maps/search/?api=1&amp;query=Via+Rialto+10A+Bologna" target="_blank" rel="noopener">Apri in mappa</a>
+    </div>
+  </section>
+
+  <section class="video" id="video">
+    <div class="section-inner">
+      <h2 class="section-title">Guardaci suonare</h2>
+      <p class="section-lead">Il modo più veloce per capire cosa facciamo.</p>
+      <div class="video-frame" id="video-frame">
+        <div class="video-placeholder">
+          <p class="video-placeholder-title">Il primo reel sta arrivando</p>
+          <p class="video-placeholder-text">Stiamo per caricare i primi video sul nostro canale YouTube.</p>
+          <a class="btn btn-coral" href="https://www.youtube.com/@TrequilaBand" target="_blank" rel="noopener">Vai al canale @TrequilaBand</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="about" id="chi-siamo">
     <div class="about-media">
-      <img src="assets/img/trio-poster.png" alt="I tre membri di Trequila: piano, chitarra e percussioni" loading="lazy">
+      <img src="assets/img/trio-poster.jpg" alt="Illustrazione dei tre membri di Trequila: pianoforte, chitarra e percussioni" loading="lazy" width="1500" height="1000">
     </div>
     <div class="about-text">
       <h2>Chi siamo</h2>
-      <p>Siamo un trio acustico: pianoforte, chitarra e percussioni, in un equilibrio che cambia a ogni serata. Suoniamo brani non nostri, ma li portiamo dove vogliamo noi — a volte li improvvisiamo da zero, davanti al pubblico, senza rete.</p>
+      <p>Siamo un trio acustico: pianoforte, chitarra e percussioni, in un equilibrio che cambia a ogni serata. Portiamo brani che conoscete dove vogliamo noi, e a volte li improvvisiamo da zero, davanti al pubblico, senza rete.</p>
       <p>Niente studio, niente dischi: la musica di Trequila esiste solo dal vivo, nel momento in cui viene suonata.</p>
+    </div>
+  </section>
+
+  <section class="members" aria-label="La band">
+    <div class="members-grid">
+      <figure class="member">
+        <img src="assets/img/photos/piano-voce.jpg" alt="Il pianista di Trequila canta davanti alla tastiera" loading="lazy" width="1800" height="1200">
+        <figcaption><strong>Pianoforte e voce</strong></figcaption>
+      </figure>
+      <figure class="member">
+        <img src="assets/img/photos/chitarra-armonica.jpg" alt="Il chitarrista di Trequila con armonica e tamburello ai piedi" loading="lazy" width="1200" height="1800">
+        <figcaption><strong>Chitarra, armonica e voce</strong></figcaption>
+      </figure>
+      <figure class="member">
+        <img src="assets/img/photos/percussioni.jpg" alt="Il percussionista di Trequila seduto sul cajon" loading="lazy" width="1200" height="1800">
+        <figcaption><strong>Percussioni</strong></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gallery" id="foto">
+    <div class="section-inner">
+      <h2 class="section-title">Dal vivo</h2>
+      <p class="section-lead">Qualche scatto dai nostri concerti in strada.</p>
+      <ul class="gallery-grid">
+        <li class="g-wide"><button type="button" class="g-item" data-full="assets/img/photos/trio.jpg" data-alt="Trequila dal vivo in piazza: pianoforte, chitarra e percussioni"><img src="assets/img/photos/trio.jpg" alt="Trequila dal vivo in piazza: pianoforte, chitarra e percussioni" loading="lazy" width="1800" height="1200"></button></li>
+        <li><button type="button" class="g-item" data-full="assets/img/photos/sorrisi.jpg" data-alt="Sorrisi sul palco tra pianoforte e percussioni"><img src="assets/img/photos/sorrisi.jpg" alt="Sorrisi sul palco tra pianoforte e percussioni" loading="lazy" width="1800" height="1200"></button></li>
+        <li><button type="button" class="g-item" data-full="assets/img/photos/pubblico.jpg" data-alt="Il pubblico attorno alla band"><img src="assets/img/photos/pubblico.jpg" alt="Il pubblico attorno alla band" loading="lazy" width="1800" height="1200"></button></li>
+        <li class="g-wide"><button type="button" class="g-item" data-full="assets/img/photos/hero-piazza.jpg" data-alt="Trequila suona in una piazza gremita"><img src="assets/img/photos/hero-piazza.jpg" alt="Trequila suona in una piazza gremita" loading="lazy" width="1800" height="1200"></button></li>
+        <li><button type="button" class="g-item" data-full="assets/img/photos/piazza-pubblico.jpg" data-alt="La piazza si riempie durante il concerto"><img src="assets/img/photos/piazza-pubblico.jpg" alt="La piazza si riempie durante il concerto" loading="lazy" width="1800" height="1200"></button></li>
+        <li class="g-wide"><button type="button" class="g-item" data-full="assets/img/photos/piano-voce.jpg" data-alt="Pianoforte e voce"><img src="assets/img/photos/piano-voce.jpg" alt="Pianoforte e voce" loading="lazy" width="1800" height="1200"></button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contatti">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title">Ci vuoi al tuo evento?</h2>
+      <p class="section-lead">Locali, feste, piazze, matrimoni, serate private. Scrivici e troviamo la formula giusta.</p>
+      <div class="contact-actions">
+        <a class="btn btn-coral" href="https://ig.me/m/trequilaband" target="_blank" rel="noopener">Scrivici su Instagram</a>
+        <a class="btn btn-outline" href="https://www.youtube.com/@TrequilaBand" target="_blank" rel="noopener">Canale YouTube</a>
+      </div>
     </div>
   </section>
 
@@ -66,9 +151,17 @@
 
 <footer class="site-footer">
   <img src="assets/img/logo.png" alt="Trequila" class="footer-mark">
-  <a href="https://www.instagram.com/trequilaband" target="_blank" rel="noopener">@trequilaband</a>
-  <p class="footer-copy">&copy; <span id="year"></span> Trequila</p>
+  <p class="footer-links">
+    <a href="https://www.instagram.com/trequilaband" target="_blank" rel="noopener">Instagram @trequilaband</a>
+    <a href="https://www.youtube.com/@TrequilaBand" target="_blank" rel="noopener">YouTube @TrequilaBand</a>
+  </p>
+  <p class="footer-copy">&copy; <span id="year"></span> Trequila Band</p>
 </footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Foto ingrandita">
+  <button type="button" class="lightbox-close" aria-label="Chiudi">&times;</button>
+  <img src="" alt="" id="lightbox-img">
+</dialog>
 
 <script src="script.js"></script>
 </body>
