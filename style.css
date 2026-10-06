@@ -525,8 +525,24 @@ img { max-width: 100%; height: auto; display: block; }
 .video-inner {
   display: grid;
   grid-template-columns: 340px 1fr;
-  gap: 3.5rem;
-  align-items: center;
+  grid-template-areas:
+    "frame title"
+    "frame text";
+  grid-template-rows: auto auto;
+  column-gap: 3.5rem;
+  align-content: center;
+}
+
+.video-title {
+  grid-area: title;
+  align-self: end;
+}
+
+.video-frame { grid-area: frame; }
+
+.video-text {
+  grid-area: text;
+  align-self: start;
 }
 
 .video-text .section-lead {
@@ -558,6 +574,15 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 6px;
   overflow: hidden;
   background: var(--teal-deep);
+}
+
+.member-photo {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
 }
 
 .member img {
@@ -753,16 +778,21 @@ img { max-width: 100%; height: auto; display: block; }
   }
   .video-inner {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-areas:
+      "title"
+      "frame"
+      "text";
+    row-gap: 1.5rem;
     justify-items: center;
   }
+  .video-title { justify-self: start; margin: 0; }
   .video-text { justify-self: stretch; }
   .contact-actions { grid-template-columns: 1fr; }
   .site-header { padding: 0.75rem 1rem; }
   .site-nav { gap: 0.9rem; }
   .section-inner { padding: 3.5rem 1.25rem; }
   .members-grid { grid-template-columns: 1fr; }
-  .member img { aspect-ratio: 4 / 3; }
+  .member img { aspect-ratio: 4 / 5; }
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
   .gallery-grid .g-wide,
   .gallery-grid li:nth-child(5) { grid-column: span 2; }

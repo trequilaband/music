@@ -4,7 +4,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const box = document.getElementById('lightbox');
 const boxImg = document.getElementById('lightbox-img');
 
-document.querySelectorAll('.g-item').forEach(function (btn) {
+document.querySelectorAll('.g-item, .member-photo').forEach(function (btn) {
   btn.addEventListener('click', function () {
     boxImg.src = btn.dataset.full;
     boxImg.alt = btn.dataset.alt || '';
